@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ISO8601DateFormatterValueTransformer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Earthquake Reporter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Earthquake ReporterTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Earthquake ReporterUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RKValueTransformers.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RestKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SOCKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TransitionKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1427C4C4D2AB5F99C70D461324A8F26A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D098831782289DF1AD055B0D736D5B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>57F3733F0D772D5E8E7E7E1C37D4165A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65A35C57F99036D78F6023BB743C7274</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>69012BE17F8A179C4E940457D0C70B1C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CB19AC041415701E7529388911E09CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE222B98ADFDFDC00A0612DA30B0CD2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AEFC2183D5F1E351B229C8A5216E61B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
