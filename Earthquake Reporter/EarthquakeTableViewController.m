@@ -30,8 +30,13 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    UIRefreshControl *refreshController = [[UIRefreshControl alloc] init];
+    [refreshController addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshController;
+    
     [self configureRestKit];
     [self loadEarthquakes];
+    [self.refreshControl beginRefreshing];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -96,10 +101,18 @@
                                                   success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
                                                       _earthquakes = mappingResult.array;
                                                       [self.tableView reloadData];
+                                                      [self.refreshControl endRefreshing];
                                                   }
                                                   failure:^(RKObjectRequestOperation *operation, NSError *error) {
                                                       NSLog(@"There is no data in usgs: %@", error);
+                                                      [self.refreshControl endRefreshing];
                                                   }];
+    }
+    
+    -(void)handleRefresh : (id)sender
+    {
+        NSLog (@"Pull To Refresh Method Called");
+        [self loadEarthquakes];
     }
 
     
