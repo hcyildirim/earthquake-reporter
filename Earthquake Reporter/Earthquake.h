@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+
 @class Property;
+@class Geometry;
 
 @interface Earthquake : NSObject
 
     @property (nonatomic, strong) NSString *id;
     @property (nonatomic, strong) NSString *type;
     @property (nonatomic, strong) Property *property;
+    @property (nonatomic, strong) Geometry *geometry;
     
 @end

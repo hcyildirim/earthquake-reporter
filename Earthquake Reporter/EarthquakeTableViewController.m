@@ -11,6 +11,7 @@
 #import "EarthquakeTableViewCell.h"
 #import "Earthquake.h"
 #import "Property.h"
+#import "Geometry.h"
 
 @interface EarthquakeTableViewController ()
     
@@ -62,6 +63,13 @@
         
         // define relationship mapping
         [earthquakeMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"properties" toKeyPath:@"property" withMapping:propertyMapping]];
+        
+        // define geometry object mapping
+        RKObjectMapping *geometryMapping = [RKObjectMapping mappingForClass:[Geometry class]];
+        [geometryMapping addAttributeMappingsFromArray:@[@"coordinates"]];
+        
+        // define relationship mapping
+        [earthquakeMapping addPropertyMapping:[RKRelationshipMapping relationshipMappingFromKeyPath:@"geometry" toKeyPath:@"geometry" withMapping:geometryMapping]];
         
         // register mappings with the provider using a response descriptor
         RKResponseDescriptor *responseDescriptor =
