@@ -13,6 +13,7 @@
 #import "Property.h"
 #import "Geometry.h"
 #import "Magnitude.h"
+#import "EarthquakeMapViewController.h"
 
 @interface EarthquakeTableViewController ()
     
@@ -237,15 +238,20 @@
     return YES;
 }
 */
+    
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"mapSegue"]) {
+        EarthquakeMapViewController *vc = [segue destinationViewController];
+        vc.earthquake = [_earthquakes objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+    }
+    
+
+    
 }
-*/
 
 @end

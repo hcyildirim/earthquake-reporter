@@ -8,6 +8,7 @@ target 'Earthquake Reporter' do
   # Pods for Earthquake Reporter
 
    pod 'RestKit'
+   pod 'GoogleMaps'
 
   target 'Earthquake ReporterTests' do
     inherit! :search_paths

@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="64" id="l6G-PD-LD5" customClass="EarthquakeTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="64" id="l6G-PD-LD5" customClass="EarthquakeTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l6G-PD-LD5" id="pMH-pL-l8R">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="63.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İstanbul, Turkey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1w-fs-ph5">
@@ -60,6 +60,7 @@
                                     <outlet property="labelDirection" destination="gOB-eM-xZB" id="ejS-6Y-Tke"/>
                                     <outlet property="labelMagnitude" destination="adl-Ub-ruF" id="pav-ap-a36"/>
                                     <outlet property="labelName" destination="n1w-fs-ph5" id="NVV-nw-r4B"/>
+                                    <segue destination="0pn-4n-tAk" kind="push" identifier="mapSegue" id="mcp-b8-5ga"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -73,6 +74,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4c-QC-cJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1110" y="142.5"/>
+        </scene>
+        <!--Earthquake Map View Controller-->
+        <scene sceneID="50n-5r-Qr8">
+            <objects>
+                <viewController id="0pn-4n-tAk" customClass="EarthquakeMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UKw-3e-1IP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yzv-JT-dWd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RAr-CZ-AFD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fFC-qz-gA7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOg-e5-gaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.5" y="142.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fqK-dk-hL5">
