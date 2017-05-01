@@ -14,19 +14,6 @@
     [super awakeFromNib];
     // Initialization code
     
-    
-    // label with circle
-    
-    CAShapeLayer *circleLayer = [CAShapeLayer layer];
-    circleLayer.frame = _labelMagnitude.bounds;
-    circleLayer.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 50, 50)].CGPath;
-    circleLayer.fillColor = [UIColor clearColor].CGColor;
-    circleLayer.strokeColor = [UIColor redColor].CGColor;
-    circleLayer.lineWidth = 2;
-    
-    // add layer to label
-    
-    [_labelMagnitude.layer addSublayer:circleLayer];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
