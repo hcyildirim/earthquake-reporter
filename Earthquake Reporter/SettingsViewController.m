@@ -45,6 +45,7 @@
     
     NSLog(@"New settings are saved. limit = %@ minmag = %@", [[NSUserDefaults standardUserDefaults] stringForKey:@"limit"], [[NSUserDefaults standardUserDefaults] stringForKey:@"minmag"]);
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"loadEarthquakes" object:self];
     [self.navigationController popViewControllerAnimated:YES];
 }
     

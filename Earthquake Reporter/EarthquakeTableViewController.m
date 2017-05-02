@@ -32,6 +32,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadEarthquakes) name:@"loadEarthquakes" object:nil];
+    
     UIRefreshControl *refreshController = [[UIRefreshControl alloc] init];
     [refreshController addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refreshController;
