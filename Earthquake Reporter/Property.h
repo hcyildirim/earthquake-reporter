@@ -12,6 +12,7 @@
 
     @property (nonatomic, strong) NSNumber *mag;
     @property (nonatomic, strong) NSString *place;
+    @property (nonatomic, strong) NSString *title;
     @property (nonatomic, strong) NSNumber *time;
     @property (nonatomic, strong) NSString *url;
     

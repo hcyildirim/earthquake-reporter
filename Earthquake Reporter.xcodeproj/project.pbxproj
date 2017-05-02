@@ -21,6 +21,7 @@
 		360736CF1EB674E200CDBA47 /* Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 360736CE1EB674E200CDBA47 /* Geometry.m */; };
 		360736D21EB7B49600CDBA47 /* Magnitude.m in Sources */ = {isa = PBXBuildFile; fileRef = 360736D11EB7B49600CDBA47 /* Magnitude.m */; };
 		360736D51EB7B9FB00CDBA47 /* EarthquakeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360736D41EB7B9FB00CDBA47 /* EarthquakeMapViewController.m */; };
+		360736D81EB8CD2600CDBA47 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360736D71EB8CD2600CDBA47 /* SettingsViewController.m */; };
 		427628C29EAD95464A2D372D /* libPods-Earthquake ReporterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E6CD939946D4DA623AA2D /* libPods-Earthquake ReporterUITests.a */; };
 		A1392AFD66A7A8201D45B97C /* libPods-Earthquake ReporterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D72E69FC468646DAAC0B67DA /* libPods-Earthquake ReporterTests.a */; };
 		B54537F78D877E155E566BD6 /* libPods-Earthquake Reporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D24E85FB57C17B67A0025FB7 /* libPods-Earthquake Reporter.a */; };
@@ -76,6 +77,8 @@
 		360736D11EB7B49600CDBA47 /* Magnitude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Magnitude.m; sourceTree = "<group>"; };
 		360736D31EB7B9FB00CDBA47 /* EarthquakeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeMapViewController.h; sourceTree = "<group>"; };
 		360736D41EB7B9FB00CDBA47 /* EarthquakeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeMapViewController.m; sourceTree = "<group>"; };
+		360736D61EB8CD2600CDBA47 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		360736D71EB8CD2600CDBA47 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		706BFFE1F83D60EFE4EEC9F8 /* Pods-Earthquake ReporterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earthquake ReporterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Earthquake ReporterTests/Pods-Earthquake ReporterTests.release.xcconfig"; sourceTree = "<group>"; };
 		8BA9B54D2DB6DB0D27428ED5 /* Pods-Earthquake ReporterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earthquake ReporterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Earthquake ReporterUITests/Pods-Earthquake ReporterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D24E85FB57C17B67A0025FB7 /* libPods-Earthquake Reporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Earthquake Reporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +160,8 @@
 				360736D11EB7B49600CDBA47 /* Magnitude.m */,
 				360736D31EB7B9FB00CDBA47 /* EarthquakeMapViewController.h */,
 				360736D41EB7B9FB00CDBA47 /* EarthquakeMapViewController.m */,
+				360736D61EB8CD2600CDBA47 /* SettingsViewController.h */,
+				360736D71EB8CD2600CDBA47 /* SettingsViewController.m */,
 			);
 			path = "Earthquake Reporter";
 			sourceTree = "<group>";
@@ -500,6 +505,7 @@
 				360736D51EB7B9FB00CDBA47 /* EarthquakeMapViewController.m in Sources */,
 				360736D21EB7B49600CDBA47 /* Magnitude.m in Sources */,
 				360736C61EB614E000CDBA47 /* Property.m in Sources */,
+				360736D81EB8CD2600CDBA47 /* SettingsViewController.m in Sources */,
 				360736C01EB6065400CDBA47 /* Earthquake.m in Sources */,
 				3607368A1EB603D300CDBA47 /* main.m in Sources */,
 			);

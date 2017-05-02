@@ -18,7 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     [GMSServices provideAPIKey:@"AIzaSyCQg1reIqhCxXlh-SDRjkcsnt5SOB5p02A"];
+    
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasLaunchedOnce"])
+    {
+        NSLog(@"its first time, so i set the limit and minmag.");
+        
+        [[NSUserDefaults standardUserDefaults] setInteger:15 forKey:@"limit"];
+        [[NSUserDefaults standardUserDefaults] setInteger:3 forKey:@"minmag"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLaunchedOnce"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
     return YES;
 }
 

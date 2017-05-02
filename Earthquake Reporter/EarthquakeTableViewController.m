@@ -65,7 +65,7 @@
         
         // define properties object mapping
         RKObjectMapping *propertyMapping = [RKObjectMapping mappingForClass:[Property class]];
-        [propertyMapping addAttributeMappingsFromArray:@[@"mag", @"place", @"time", @"url"]];
+        [propertyMapping addAttributeMappingsFromArray:@[@"mag", @"place", @"title", @"time", @"url"]];
         
         
         // define relationship mapping
@@ -92,8 +92,8 @@
     
 - (void)loadEarthquakes
     {
-        NSString *limit = @"15";
-        NSString *minmag = @"3";
+        NSString *limit = [[NSUserDefaults standardUserDefaults] stringForKey:@"limit"];
+        NSString *minmag = [[NSUserDefaults standardUserDefaults] stringForKey:@"minmag"];
         
         NSDictionary *queryParams = @{@"limit" : limit,
                                       @"minmag" : minmag};

@@ -31,7 +31,7 @@
     // Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake([[_earthquake.geometry.coordinates objectAtIndex:1] floatValue], [[_earthquake.geometry.coordinates objectAtIndex:0] floatValue]);
-    marker.title = _earthquake.property.place;
+    marker.title = _earthquake.property.title;
     marker.snippet = _earthquake.property.place;
     marker.map = mapView;
 
