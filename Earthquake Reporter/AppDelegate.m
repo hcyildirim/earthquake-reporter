@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <RestKit/RestKit.h>
 @import GoogleMaps;
 
 @interface AppDelegate ()
@@ -18,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [AFRKNetworkActivityIndicatorManager sharedManager].enabled = YES;
     
     [GMSServices provideAPIKey:@"AIzaSyCQg1reIqhCxXlh-SDRjkcsnt5SOB5p02A"];
     

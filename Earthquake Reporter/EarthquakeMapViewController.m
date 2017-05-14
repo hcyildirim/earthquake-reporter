@@ -25,7 +25,6 @@
                                                             longitude:[[_earthquake.geometry.coordinates objectAtIndex:0] floatValue]
                                                                  zoom:6];
     GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    mapView.myLocationEnabled = YES;
     self.view = mapView;
     
     // Creates a marker in the center of the map.
