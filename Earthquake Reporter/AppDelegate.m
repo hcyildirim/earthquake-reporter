@@ -29,7 +29,7 @@
         NSLog(@"its first time, so i set the limit and minmag.");
         
         [[NSUserDefaults standardUserDefaults] setInteger:15 forKey:@"limit"];
-        [[NSUserDefaults standardUserDefaults] setInteger:3 forKey:@"minmag"];
+        [[NSUserDefaults standardUserDefaults] setInteger:3 forKey:@"magnitude"];
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasLaunchedOnce"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }

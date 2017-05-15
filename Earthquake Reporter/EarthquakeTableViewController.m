@@ -95,7 +95,7 @@
 - (void)loadEarthquakes
     {
         NSString *limit = [[NSUserDefaults standardUserDefaults] stringForKey:@"limit"];
-        NSString *minmag = [[NSUserDefaults standardUserDefaults] stringForKey:@"minmag"];
+        NSString *minmag = [[NSUserDefaults standardUserDefaults] stringForKey:@"magnitude"];
         
         NSDictionary *queryParams = @{@"limit" : limit,
                                       @"minmag" : minmag};
