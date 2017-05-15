@@ -100,6 +100,10 @@
         textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     }];
     
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        
+    }]];
+    
     [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         NSArray * textfields = alertController.textFields;
         UITextField * field = textfields[0];
@@ -112,9 +116,7 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"loadEarthquakes" object:self];
     }]];
     
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        
-    }]];
+
 
     [self presentViewController:alertController animated:YES completion:nil];
 }
