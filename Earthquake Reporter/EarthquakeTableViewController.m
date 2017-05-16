@@ -13,7 +13,7 @@
 #import "Property.h"
 #import "Geometry.h"
 #import "Magnitude.h"
-#import "EarthquakeMapViewController.h"
+#import "EarthquakeDetailMapViewController.h"
 
 @interface EarthquakeTableViewController ()
     
@@ -205,7 +205,7 @@
     
     return cell;
 }
-    
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -246,14 +246,10 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
     if ([[segue identifier] isEqualToString:@"mapSegue"]) {
-        EarthquakeMapViewController *vc = [segue destinationViewController];
+        EarthquakeDetailMapViewController *vc = [segue destinationViewController];
         vc.earthquake = [_earthquakes objectAtIndex:[self.tableView indexPathForSelectedRow].row];
     }
-    
-
-    
 }
 
 @end

@@ -115,8 +115,6 @@
         
         [[NSNotificationCenter defaultCenter] postNotificationName:@"loadEarthquakes" object:self];
     }]];
-    
-
 
     [self presentViewController:alertController animated:YES completion:nil];
 }

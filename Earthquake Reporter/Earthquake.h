@@ -17,5 +17,5 @@
     @property (nonatomic, strong) NSString *type;
     @property (nonatomic, strong) Property *property;
     @property (nonatomic, strong) Geometry *geometry;
-    
+
 @end
