@@ -1,3 +1,7 @@
+# earthquake-reporter
+
+The application lists the earthquakes using the API at https://earthquake.usgs.gov/.
+
 # list of earthquakes
 
 ![image-1](https://user-images.githubusercontent.com/10330468/34467679-6f82b0bc-ef09-11e7-800e-00a839d88f56.jpg)
